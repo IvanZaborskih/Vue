@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vue for beginner</title>
+    <link rel="stylesheet" href="theme.css">
+</head>
+
+<body>
+
+    <div id="app" class="container pt-5">
+        <div class="card center">
+            <h1>{{ title }}: {{ counter }}</h1>
+            <div>
+                <button class="btn primary" v-on:click="counter++">Прибавить</button>
+                <button class="btn danger" v-on:click="counter--">Отнять</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="01_app.js"></script>
+
+</body>
+
+</html>
